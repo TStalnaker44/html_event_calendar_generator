@@ -1,0 +1,22 @@
+<script>
+
+/*When mouse hovers over a square on the calendar*/
+function mouseOver(ID, txt) {
+  document.getElementById(ID).style.backgroundColor = '#a6dced';
+  document.getElementById("event").innerHTML = txt;
+  document.getElementById(ID).style.cursor = "pointer";
+}
+
+/*When mouse leaves a square on the calendar*/
+function mouseOut(ID) {
+  document.getElementById(ID).style.backgroundColor = "white";
+  document.getElementById("event").innerHTML = "";
+}
+
+/*When a user clicks on a square on the calendar*/
+function onClick(txt, mon, date){
+    text = "Events Scheduled For " + mon + " " + date;
+    document.getElementById("billboard").innerHTML = text;
+    document.getElementById("eventpara").innerHTML = txt;
+}
+</script>

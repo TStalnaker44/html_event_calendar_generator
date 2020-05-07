@@ -1,0 +1,43 @@
+<style>
+table {
+    border-style: ridge;
+    border-width: 2px;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    height: 70%;
+    cursor: default;
+}
+td, th {
+    border-style: solid;
+    border-width: 1px;
+    width: 45px;
+    height: 30px;
+}
+.noday {
+    background-color: #D3D3D3;
+}
+.month {
+    font-size: 12pt;
+}
+p {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    margin-top: 10pt;
+}
+h2 {
+    text-align: center;
+    font-size: 14pt !important;
+}
+#container{width:100%; height:80%; margin:auto; padding-top:5pt;}
+#left{float:left; width:50%;}
+#right{float:right; width: 50%;}
+#billboard{font-size: 14pt;}
+
+@media screen and (max-width: 600px) {
+  #right {float: none; width:100%; margin:auto; height:50%;}
+  #left {float: none; width:100%; margin:auto; padding-top:5px;}
+  #event {display: none;}
+}
+</style>
